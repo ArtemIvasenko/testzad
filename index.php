@@ -42,20 +42,8 @@
     
     $possibility = false;
     foreach($libs as $lib) {
-		if ($lib[0] == null) {
+		if ($lib[0] === null) {
 		    $possibility = true;
-		}
-	}
-
-	foreach($libs as $lib) {
-		foreach($lib as $key => $l) {
-		    if (!($l === null)) {
-    			foreach($libs[$l] as $zl) {
-    			    if ($key === $zl) {
-    					$possibility = false;
-    				}
-    			}
-    		}
 		}
 	}
     
